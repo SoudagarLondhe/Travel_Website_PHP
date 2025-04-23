@@ -102,14 +102,9 @@ body {
   flex-direction: column;
   gap: 20px;
   line-height: 1.6; 
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
 }
 
-
-.fact-item:hover {
-  transform: rotateY(10deg) scale(1.05); 
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
-}
 
 
 .fact-item i {
@@ -136,19 +131,6 @@ body {
 .gallery img {
   width: 100%;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out, 
-  box-shadow 0.3s ease-in-out;
-}
-
-
-.gallery img:hover {
-  transform: rotateY(10deg) scale(1.05);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
-}
-
-
-.combine_img img:hover {
-  transform: rotateX(10deg) scale(1.05);
 }
 
 .combine_img{
@@ -178,14 +160,10 @@ body {
   margin: auto;
   border-radius: 12px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Stronger 3D effect */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ 
 }
 
 
-.visit-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-}
 
 
 .visit-card ul {
