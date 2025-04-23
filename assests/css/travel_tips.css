@@ -1,0 +1,246 @@
+/* Travel tips CSS page */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 90px;
+  background-color: #f8f9fa;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("../images/tt1.jpeg")  center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 10px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.travel-tips {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.travel-tips h2 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #007bff;
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tip-item {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tip-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tip-item img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tip-item i {
+  font-size: 35px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.tip-item h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.tip-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.important-info {
+  background-color: #e9ecef;
+  padding: 40px 20px;
+}
+
+.important-info h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 25px;
+  color: #007bff;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info-item {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.info-item i {
+  font-size: 16px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.info-item h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.info-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #036ad7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  z-index: 1000;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#scrollToTop:hover {
+  background: #014085;
+}
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 25x;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .tip-item {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .tip-item img {
+    max-height: 180px;
+  }
+
+  .important-info {
+    padding: 40px 10px;
+  }
+
+  .info-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .tip-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .info-item {
+    width: 100%;
+  }
+}

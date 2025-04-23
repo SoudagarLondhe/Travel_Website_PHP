@@ -1,0 +1,104 @@
+/* References CSS page */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding-top: 90px;
+  background-color: #f8f9fa;
+
+}
+
+.reference-container {
+    padding: 50px 10%;
+    background: white;
+  }
+  
+  .reference-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    /* color: #007bff; */
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .reference-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .reference-container ul li {
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    font-size: 16px;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+  }
+  
+
+  
+  .reference-container ul li a {
+    color: #007bff;
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+    transition: color 0.3s ease-in-out;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: block;
+  }
+  
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #036ad7;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  z-index: 1000;
+}
+
+#scrollToTop.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#scrollToTop:hover {
+  background: #014085;
+}
+
+
