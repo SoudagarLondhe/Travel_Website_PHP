@@ -53,42 +53,41 @@ document.addEventListener("DOMContentLoaded", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   }
+
+    // Typewriter Effect for Contextual Message for 'Index' and all 'About' NYC pages
+    const typewriter = document.getElementById("typewriter-text");
+    if (typewriter && typewriter.dataset.message) {
+      const message = typewriter.dataset.message;
+      let index = 0;
+
+      function typeNextChar() {
+        if (index < message.length) {
+          typewriter.textContent += message.charAt(index);
+          index++;
+          setTimeout(typeNextChar, 80);
+        }
+      }
+
+      typeNextChar();
+    }
+
+  
 });
 
 
 
-
 // document.addEventListener("DOMContentLoaded", function () {
-//   const navbarContainer = document.getElementById("navbar-container");
+//   // Navbar Toggle Logic
+//   const menuToggle = document.getElementById("menu-toggle");
+//   const navMenu = document.getElementById("nav-menu");
+//   const menuIcon = document.getElementById("menu-icon");
+//   const dropdowns = document.querySelectorAll(".dropdown");
 
-//   let navbarPath = "pages/navbar.html"; 
-
-//   if (window.location.pathname.includes("/pages/")) {
-//     navbarPath = "../pages/navbar.html";
-//   }
-
-//   // Fetch and insert the navbar dynamically
-//   fetch(navbarPath)
-//     .then(response => response.text())
-//     .then(data => {
-//       navbarContainer.innerHTML = data;
-
-//       addNavbarEventListeners();
-//     })
-//     .catch(error => console.error("Error loading navbar:", error));
-
-//   // Function to add event listeners for mobile navbar toggle
-//   function addNavbarEventListeners() {
-//     const menuToggle = document.getElementById("menu-toggle");
-//     const navMenu = document.getElementById("nav-menu");
-//     const menuIcon = document.getElementById("menu-icon");
-//     const dropdowns = document.querySelectorAll(".dropdown");
-
-//     if (!menuToggle || !navMenu || !menuIcon) return;
-
+//   if (menuToggle && navMenu && menuIcon) {
 //     menuToggle.addEventListener("click", () => {
 //       navMenu.classList.toggle("active");
 
+//       // Change icon to close or menu
 //       if (navMenu.classList.contains("active")) {
 //         menuIcon.classList.replace("ri-menu-line", "ri-close-line");
 //       } else {
@@ -133,3 +132,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //     });
 //   }
 // });
+
+
+// ------------------------------------

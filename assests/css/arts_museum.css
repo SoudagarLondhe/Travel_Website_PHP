@@ -223,6 +223,14 @@ body {
 }
 
 
+.typewriter-text {
+  font-weight: 400;
+  margin-top: 1rem;
+  border-right: 2px solid #f3f4f6;
+  width: fit-content;
+  margin: 1rem auto 0; 
+}
+
   
   @media (max-width: 768px) {
     .history-grid, .culture-grid, .festivals-content {
