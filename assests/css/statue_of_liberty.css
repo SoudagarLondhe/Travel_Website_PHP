@@ -116,33 +116,106 @@ body {
 
 .gallery {
   background: #e9ecef;
-  padding: 50px;
+  padding: 50px 10px;
 }
 
 .gallery h2 {
   text-align: center;
   margin-bottom: 25px;
 }
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+.gallery-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px;
+  
 }
 
-.gallery img {
-  width: 100%;
+/*  */
+.gallery-image-wrapper {
+  overflow: hidden;
   border-radius: 8px;
- 
+  flex: 0 0 auto;
+  position: relative;
+}
+.gallery-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-image-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+/*  */
+.gallery-slider {
+  overflow: hidden;
+  width: 100%;
 }
 
 
-
-.combine_img{
+.gallery-track {
   display: flex;
-  flex-direction: column;
-  gap: 7px;
+  gap: 15px;
+  transition: transform 0.5s ease;
+  will-change: transform;
 }
 
+
+.gallery-track img {
+  flex: 0 0 auto;
+  width: 250px;                
+  height: auto;               
+  max-height: 380px;           
+  object-fit: contain;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(40, 45, 49, 0.9);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.gallery-btn.left {
+  left: 5px;
+}
+
+.gallery-btn.right {
+  right: 5px;
+}
+
+.gallery-btn:hover {
+  background-color: #007bff;
+}
+
+
+.gallery-grid img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gallery-grid img.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-slider {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+}
 
 
 .visit-info-data {
@@ -163,7 +236,7 @@ body {
   max-width: 600px;
   margin: auto;
   border-radius: 12px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Stronger 3D effect */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 
