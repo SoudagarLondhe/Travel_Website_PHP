@@ -1,90 +1,9 @@
-<!-- Restaurants HTML page -->
+<?php
+$pageTitle = 'Restaurants';
+$pageCSS = "assets/css/restaurants.css";
+require_once('assets/inc/header.inc.php');
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assests/css/navbar.css" />
-    <link rel="stylesheet" href="./assests/css/restaurants.css" />  
-    <script src="./assests/js/script.js" defer></script>
-    <title>Restaurants in NYC</title>
-</head>
-<body>
-
-    <div id="navbar-container">
-        <nav>
-            <div class="nav__logo">
-              <a href="./index.html">
-                <img src="./assests/images/logo2.png" alt="Logo" />
-                <h3>Wander NYC</h3>
-              </a>
-            </div>
-          
-            <div class="menu-toggle" id="menu-toggle">
-              <i class="ri-menu-line" id="menu-icon"></i> 
-            </div>
-          
-            <ul class="nav__links nav-menu" id="nav-menu">
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Attractions</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./empireStateBuilding.html">Empire State Building</a></li>
-                  <li><a href="./central_park.html">Central Park</a></li>
-                  <li><a href="./times_square.html">Times Square</a></li>
-                  <li><a href="./statue_of_liberty.html">Statue of Liberty</a></li>
-                  <li><a href="./one_world_trade_center.html">One World Trade Center(WTC)</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Food and Dining</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./restaurants.html">Restaurants</a></li>
-                  <li><a href="./pizza.html">Pizza</a></li>
-                  <li><a href="./clubs.html">Clubs and Bars</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">About NYC</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./history.html">History and Culture</a></li>
-                  <li><a href="./arts_museum.html">Arts and Museum</a></li>
-                  <li><a href="./facts.html">Immigration and Facts</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Transportation Guide</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./bus_taxis.html">Bus Taxi/Uber</a></li>
-                  <li><a href="./subways.html">Subways</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Blogs</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./blog.html">Travel Experience</a></li>
-                  <li><a href="./travel_tips.html">Travel Tips</a></li>
-                </ul>
-              </li>
-          
-              <li class="link" ><a href="./references.html" class="main_nav">References</a></li>
-              <li class="link" ><a href="./documentation.html" class="main_nav">Documentation</a></li>
-          
-          
-          
-            </ul>
-          </nav>
-    </div>
-
-    <button id="scrollToTop" title="Go to top">
-        <i class="ri-arrow-up-line"></i>
-    </button>
+?>
 
     <header class="hero">
         <div class="hero-content">
@@ -128,7 +47,7 @@
           <h2>Popular Restaurants in NYC</h2>
           <div class="restaurant-list">
               <div class="restaurant-item">
-                  <img src="./assests/images/le_bernardin.jpg" alt="Le Bernardin">
+                  <img src="./assets/images/le_bernardin.jpg" alt="Le Bernardin">
                   <div class="restaurant-info">
                       <h3>Le Bernardin</h3>
                       <p>Michelin-starred seafood heaven. Le Bernardin offers an elegant dining experience with world-class flavors.</p>
@@ -138,7 +57,7 @@
               </div>
   
               <div class="restaurant-item">
-                  <img src="./assests/images/katz_deli.jpg" alt="Katz's Delicatessen">
+                  <img src="./assets/images/katz_deli.jpg" alt="Katz's Delicatessen">
                   <div class="restaurant-info">
                       <h3>Katz's Delicatessen</h3>
                       <p>New York's most famous Jewish deli, serving its legendary pastrami sandwiches since 1888.</p>
@@ -149,7 +68,7 @@
               </div>
   
               <div class="restaurant-item">
-                  <img src="./assests/images/per_se.jpg" alt="Per Se">
+                  <img src="./assets/images/per_se.jpg" alt="Per Se">
                   <div class="restaurant-info">
                       <h3>Per Se</h3>
                       <p>Fine dining at its peak. Per Se is known for its luxurious French cuisine and an unforgettable tasting menu.</p>
@@ -178,18 +97,12 @@
       <section class="gallery">
           <h2>Delicious NYC Eats</h2>
           <div class="gallery-grid">
-              <img src="./assests/images/pizza_nyc.jpg" alt="New York Pizza">
-              <img src="./assests/images/sushi.jpg" alt="Sushi in NYC">
-              <img src="./assests/images/steak.jpg" alt="NYC Steakhouse">
-              <img src="./assests/images/desserts.jpg" alt="NYC Desserts">
+              <img src="./assets/images/pizza_nyc.jpg" alt="New York Pizza">
+              <img src="./assets/images/sushi.jpg" alt="Sushi in NYC">
+              <img src="./assets/images/steak.jpg" alt="NYC Steakhouse">
+              <img src="./assets/images/desserts.jpg" alt="NYC Desserts">
           </div>
       </section>
 
 
-    <footer>
-        <p>&copy; 2025 Soudagar Londhe @RIT. All rights reserved.</p>
-    </footer>
-
-
-</body>
-</html>
+      <?php require_once('assets/inc/footer.inc.php'); ?>

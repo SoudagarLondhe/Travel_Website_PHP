@@ -1,95 +1,13 @@
-<!-- History and Culture HTML page -->
+<?php
+$pageTitle = 'History';
+$pageCSS = "assets/css/history.css";
+require_once('assets/inc/header.inc.php');
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assests/css/navbar.css" />
-    <link rel="stylesheet" href="./assests/css/history.css" />  
-    <script src="./assests/js/script.js" defer></script>
-    <title>History & Culture of NYC</title>
-</head>
-<body>
-
-    <div id="navbar-container">
-      <nav>
-        <div class="nav__logo">
-          <a href="./index.html">
-            <img src="./assests/images/logo2.png"  alt="Logo" />
-            <h3>Wander NYC</h3>
-          </a>
-        </div>
-      
-        <div class="menu-toggle" id="menu-toggle">
-          <i class="ri-menu-line" id="menu-icon"></i> 
-        </div>
-      
-        <ul class="nav__links nav-menu" id="nav-menu">
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Attractions</a>
-            <ul class="dropdown-menu">
-              <li><a href="./empireStateBuilding.html">Empire State Building</a></li>
-              <li><a href="./central_park.html">Central Park</a></li>
-              <li><a href="./times_square.html">Times Square</a></li>
-              <li><a href="./statue_of_liberty.html">Statue of Liberty</a></li>
-              <li><a href="./one_world_trade_center.html">One World Trade Center(WTC)</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Food and Dining</a>
-            <ul class="dropdown-menu">
-              <li><a href="./restaurants.html">Restaurants</a></li>
-              <li><a href="./pizza.html">Pizza</a></li>
-              <li><a href="./clubs.html">Clubs and Bars</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">About NYC</a>
-            <ul class="dropdown-menu">
-              <li><a href="./history.html">History and Culture</a></li>
-              <li><a href="./arts_museum.html">Arts and Museum</a></li>
-              <li><a href="./facts.html">Immigration and Facts</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Transportation Guide</a>
-            <ul class="dropdown-menu">
-              <li><a href="./bus_taxis.html">Bus Taxi/Uber</a></li>
-              <li><a href="./subways.html">Subways</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Blogs</a>
-            <ul class="dropdown-menu">
-              <li><a href="./blog.html">Travel Experience</a></li>
-              <li><a href="./travel_tips.html">Travel Tips</a></li>
-            </ul>
-          </li>
-      
-          <li class="link" ><a href="./references.html" class="main_nav">References</a></li>
-          <li class="link" ><a href="./documentation.html" class="main_nav">Documentation</a></li>
-      
-      
-      
-        </ul>
-      </nav>
-    </div>
-
-    <button id="scrollToTop" title="Go to top">
-      <i class="ri-arrow-up-line"></i>
-    </button>
+?>
 
     <header class="hero">
       <div class="hero-content">
         <h1>The History & Culture of New York City</h1>
-        <!-- <p>From its colonial past to its modern global influence, explore how NYC became the cultural epicenter of the world.</p> -->
         <p id="typewriter-text" class="typewriter-text" data-message="Step back in time and witness NYC's legendary beginnings."></p>
 
       </div>
@@ -98,7 +16,7 @@
 
     <section class="history-section">
       <div class="history-grid">
-          <img src="./assests/images/nyc_history_1.jpg" alt="Historical NYC">
+          <img src="./assets/images/nyc_history_1.jpg" alt="Historical NYC">
           <div class="history-text">
             <h2>📜 The Evolution of New York City</h2>
             <p>New York City was originally inhabited by the Lenape people, a Native American tribe that lived along the Hudson River, 
@@ -141,7 +59,7 @@
                 and the Guggenheim showcase some of the most influential works of art in history, making NYC a haven for artists and creatives worldwide.
               </p> 
             </div>
-          <img src="./assests/images/nyc_history_2.jpg" alt="Culture of NYC">
+          <img src="./assets/images/nyc_history_2.jpg" alt="Culture of NYC">
       </div>
   </section>
 
@@ -149,7 +67,7 @@
       <h2>🏛️ NYC's Cultural</h2>
       <div class="highlights-grid">
           <div class="highlight-card">
-              <img src="./assests/images/nyc_broadway.jpg" alt="Broadway">
+              <img src="./assets/images/nyc_broadway.jpg" alt="Broadway">
               <h3>🎭 Broadway</h3>
               <p>Home to the world's best theater productions, Broadway has shaped the global entertainment industry. 
                 From timeless classics to modern hits, its stages continue to bring stories to life for millions of visitors each year. 
@@ -157,7 +75,7 @@
          
           </div>
           <div class="highlight-card">
-              <img src="./assests/images/nyc_harlem.jpg" alt="Harlem">
+              <img src="./assets/images/nyc_harlem.jpg" alt="Harlem">
               <h3>🎷 Harlem Renaissance</h3>
               <p>The artistic and cultural movement of the 1920s that gave birth to jazz, poetry, and new forms of expression. 
                 It laid the foundation for Black cultural identity, influencing generations of musicians, writers, and activists. 
@@ -165,7 +83,7 @@
          
           </div>
           <div class="highlight-card">
-              <img src="./assests/images/nyc_moma.jpg" alt="MoMA">
+              <img src="./assets/images/nyc_moma.jpg" alt="MoMA">
               <h3>🖼️ The Museum of Modern Art (MoMA)</h3>
               <p>One of the most influential modern art museums in the world, showcasing works from Picasso to Warhol.</p>
           </div>
@@ -182,26 +100,20 @@
                <p>Every ethnic community in NYC celebrates its heritage, with festivals like the Chinese New Year Parade, Puerto Rican Day Parade, and the NYC Pride March bringing people together in colorful celebrations. The Diwali Festival lights up the streets with South Asian culture, while the San Gennaro Feast in Little Italy showcases Italian-American traditions with food, music, and processions. The annual West Indian Day Parade in Brooklyn is one of the most vibrant cultural events, featuring Caribbean music, dance, and dazzling costumes. The city also hosts the Sakura Matsuri Cherry Blossom Festival at the Brooklyn Botanic Garden, celebrating Japanese culture with traditional performances and stunning floral displays.</p>  
          
             </div>
-          <img src="./assests/images/nyc_festival.jpg" alt="NYC Festival">
+          <img src="./assets/images/nyc_festival.jpg" alt="NYC Festival">
       </div>
   </section>
 
   <section class="gallery">
       <h2>📸 NYC's Cultural Gallery</h2>
       <div class="gallery-grid">
-          <img src="./assests/images/history_gallery_1.jpeg" alt="Easter">
-          <img src="./assests/images/history_gallery_2.jpg" alt="worker">
-          <img src="./assests/images/history_gallery_3.jpg" alt="Art">
-          <img src="./assests/images/history_gallery_4.jpg" alt="Parade">
+          <img src="./assets/images/history_gallery_1.jpeg" alt="Easter">
+          <img src="./assets/images/history_gallery_2.jpg" alt="worker">
+          <img src="./assets/images/history_gallery_3.jpg" alt="Art">
+          <img src="./assets/images/history_gallery_4.jpg" alt="Parade">
       </div>
   </section>
 
 
 
-    <footer>
-        <p>&copy; 2025 Soudagar Londhe @RIT. All rights reserved.</p>
-    </footer>
-
-
-</body>
-</html>
+  <?php require_once('assets/inc/footer.inc.php'); ?>

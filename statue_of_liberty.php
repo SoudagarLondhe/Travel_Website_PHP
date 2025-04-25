@@ -1,90 +1,9 @@
-<!-- Statue of Liberty HTML page -->
+<?php
+$pageTitle = 'Statue of Liberty';
+$pageCSS = "assets/css/statue_of_liberty.css";
+require_once('assets/inc/header.inc.php');
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assests/css/navbar.css" />
-    <link rel="stylesheet" href="./assests/css/statue_of_liberty.css" />  
-    <script src="./assests/js/script.js" defer></script>
-    <title>Statue of Liberty of NYC</title>
-</head>
-<body>
-
-    <div id="navbar-container">
-        <nav>
-            <div class="nav__logo">
-              <a href="./index.html">
-                <img src="./assests/images/logo2.png"  alt="Logo" />
-                <h3>Wander NYC</h3>
-              </a>
-            </div>
-          
-            <div class="menu-toggle" id="menu-toggle">
-              <i class="ri-menu-line" id="menu-icon"></i> 
-            </div>
-          
-            <ul class="nav__links nav-menu" id="nav-menu">
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Attractions</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./empireStateBuilding.html">Empire State Building</a></li>
-                  <li><a href="./central_park.html">Central Park</a></li>
-                  <li><a href="./times_square.html">Times Square</a></li>
-                  <li><a href="./statue_of_liberty.html">Statue of Liberty</a></li>
-                  <li><a href="./one_world_trade_center.html">One World Trade Center(WTC)</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Food and Dining</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./restaurants.html">Restaurants</a></li>
-                  <li><a href="./pizza.html">Pizza</a></li>
-                  <li><a href="./clubs.html">Clubs and Bars</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">About NYC</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./history.html">History and Culture</a></li>
-                  <li><a href="./arts_museum.html">Arts and Museum</a></li>
-                  <li><a href="./facts.html">Immigration and Facts</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Transportation Guide</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./bus_taxis.html">Bus Taxi/Uber</a></li>
-                  <li><a href="./subways.html">Subways</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Blogs</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./blog.html">Travel Experience</a></li>
-                  <li><a href="./travel_tips.html">Travel Tips</a></li>
-                </ul>
-              </li>
-          
-              <li class="link" ><a href="./references.html" class="main_nav">References</a></li>
-              <li class="link" ><a href="./documentation.html" class="main_nav">Documentation</a></li>
-          
-          
-          
-            </ul>
-          </nav>
-    </div>
-
-    <button id="scrollToTop" title="Go to top">
-        <i class="ri-arrow-up-line"></i>
-    </button>
+?>
 
     <header class="hero">
         <div class="hero-content">
@@ -111,13 +30,13 @@
                 </p>
              </div>
             <div class="about-image">
-                <img src="./assests/images/sl2.jpg" alt="Statue of Liberty">
+                <img src="./assets/images/sl2.jpg" alt="Statue of Liberty">
             </div>
         </div>
 
         <div class="about-container">
             <div class="about-image">
-                <img src="./assests/images/sl3.jpg" alt="Statue of Liberty in the Evening">
+                <img src="./assets/images/sl3.jpg" alt="Statue of Liberty in the Evening">
             </div>
             <div class="about-content">
                 <h2>Notable Features</h2>
@@ -138,7 +57,7 @@
         <div class="about-container">
             <div class="map_details">
                 <p>Statue of Liberty on map</p>
-                <img src="./assests/images/statue_on_map.png" alt="View from the Top">
+                <img src="./assets/images/statue_on_map.png" alt="View from the Top">
             </div>
         </div>
     </section>
@@ -175,56 +94,56 @@
   
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl4.avif" alt="Statue of Liberty" />
+              <img src="./assets/images/sl4.avif" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl7.avif" alt="Statue of Liberty" />
+              <img src="./assets/images/sl7.avif" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl6.avif" alt="Statue of Liberty" />
+              <img src="./assets/images/sl6.avif" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl21.avif" alt="Statue of Liberty" />
+              <img src="./assets/images/sl21.avif" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl22.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl22.jpg" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl23.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl23.jpg" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl24.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl24.jpg" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl25.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl25.jpg" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl26.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl26.jpg" alt="Statue of Liberty" />
             </div>
             
           
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl27.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl27.jpg" alt="Statue of Liberty" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl28.webp" alt="Statue of Liberty" />
+              <img src="./assets/images/sl28.webp" alt="Statue of Liberty" />
             </div>
   
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl29.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl29.jpg" alt="Statue of Liberty" />
             </div>
   
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/sl30.jpg" alt="Statue of Liberty" />
+              <img src="./assets/images/sl30.jpg" alt="Statue of Liberty" />
             </div>
             
   
@@ -257,9 +176,4 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Soudagar Londhe @RIT. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <?php require_once('assets/inc/footer.inc.php'); ?>

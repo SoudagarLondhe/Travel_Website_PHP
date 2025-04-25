@@ -1,95 +1,13 @@
-<!-- Arts Museum HTML page -->
+<?php
+$pageTitle = 'Arts & Museum';
+$pageCSS = "assets/css/arts_museum.css";
+require_once('assets/inc/header.inc.php');
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assests/css/navbar.css" />
-    <link rel="stylesheet" href="./assests/css/arts_museum.css" />  
-    <script src="./assests/js/script.js" defer></script>
-    <title>Arts and Museum in NYC</title>
-</head>
-<body>
-
-    <div id="navbar-container">
-      <nav>
-        <div class="nav__logo">
-          <a href="./index.html">
-            <img src="./assests/images/logo2.png" alt="Logo" />
-            <h3>Wander NYC</h3>
-          </a>
-        </div>
-      
-        <div class="menu-toggle" id="menu-toggle">
-          <i class="ri-menu-line" id="menu-icon"></i> 
-        </div>
-      
-        <ul class="nav__links nav-menu" id="nav-menu">
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Attractions</a>
-            <ul class="dropdown-menu">
-              <li><a href="./empireStateBuilding.html">Empire State Building</a></li>
-              <li><a href="./central_park.html">Central Park</a></li>
-              <li><a href="./times_square.html">Times Square</a></li>
-              <li><a href="./statue_of_liberty.html">Statue of Liberty</a></li>
-              <li><a href="./one_world_trade_center.html">One World Trade Center(WTC)</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Food and Dining</a>
-            <ul class="dropdown-menu">
-              <li><a href="./restaurants.html">Restaurants</a></li>
-              <li><a href="./pizza.html">Pizza</a></li>
-              <li><a href="./clubs.html">Clubs and Bars</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">About NYC</a>
-            <ul class="dropdown-menu">
-              <li><a href="./history.html">History and Culture</a></li>
-              <li><a href="./arts_museum.html">Arts and Museum</a></li>
-              <li><a href="./facts.html">Immigration and Facts</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Transportation Guide</a>
-            <ul class="dropdown-menu">
-              <li><a href="./bus_taxis.html">Bus Taxi/Uber</a></li>
-              <li><a href="./subways.html">Subways</a></li>
-            </ul>
-          </li>
-      
-          <li class="link dropdown">
-            <a href="#" class="main_nav">Blogs</a>
-            <ul class="dropdown-menu">
-              <li><a href="./blog.html">Travel Experience</a></li>
-              <li><a href="./travel_tips.html">Travel Tips</a></li>
-            </ul>
-          </li>
-      
-          <li class="link" ><a href="./references.html" class="main_nav">References</a></li>
-          <li class="link" ><a href="./documentation.html" class="main_nav">Documentation</a></li>
-      
-      
-      
-        </ul>
-      </nav>
-    </div>
-
-    <button id="scrollToTop" title="Go to top">
-      <i class="ri-arrow-up-line"></i>
-    </button>
+?>
 
     <header class="hero">
       <div class="hero-content">
         <h1>Arts & Museums of New York City</h1>
-        <!-- <p>Discover the vibrant art scene and world-class museums that make NYC a global cultural capital.</p> -->
         <p id="typewriter-text" class="typewriter-text" data-message="A city where every street corner is a canvas."></p>
 
       </div>
@@ -98,7 +16,7 @@
 
     <section class="history-section">
         <div class="history-grid">
-            <img src="./assests/images/art_1.jpg" alt="NYC Art Scene">
+            <img src="./assets/images/art_1.jpg" alt="NYC Art Scene">
             <div class="history-text">
               <h2>🎨 The Artistic Heart of NYC</h2>
               <p>New York City has long been a hub for artists, creatives, and innovators. From the abstract expressionism of the 1940s to the street art revolution of the 1980s, NYC has been at the forefront of artistic movements. The city's galleries, studios, and public art installations reflect its dynamic and ever-evolving creative spirit.</p>
@@ -118,7 +36,7 @@
                 
                 <p>The Museum of Modern Art (MoMA) is a must-visit for modern and contemporary art lovers, featuring works by Picasso, Van Gogh, and Warhol. The Guggenheim Museum, designed by Frank Lloyd Wright, is an architectural masterpiece that houses an impressive collection of modern art. For those interested in American history and culture, the American Museum of Natural History and the Tenement Museum offer immersive experiences.</p> 
             </div>
-            <img src="./assests/images/museum_1.jpg" alt="NYC Museums">
+            <img src="./assets/images/museum_1.jpg" alt="NYC Museums">
         </div>
       </section>
   
@@ -126,17 +44,17 @@
         <h2>🌟 Iconic Art & Museum Highlights</h2>
         <div class="highlights-grid">
             <div class="highlight-card">
-                <img src="./assests/images/nyc_met.jpg" alt="The Met">
+                <img src="./assets/images/nyc_met.jpg" alt="The Met">
                 <h3>🖼️ The Metropolitan Museum of Art</h3>
                 <p>Explore over 2 million works of art, from ancient Egyptian artifacts to European masterpieces. The Met's rooftop garden offers stunning views of Central Park and the city skyline.</p>
             </div>
             <div class="highlight-card">
-                <img src="./assests/images/nyc_guggenheim.jpg" alt="Guggenheim">
+                <img src="./assets/images/nyc_guggenheim.jpg" alt="Guggenheim">
                 <h3>🌀 The Guggenheim Museum</h3>
                 <p>Designed by Frank Lloyd Wright, this iconic spiral building houses a remarkable collection of modern and contemporary art, including works by Kandinsky and Pollock.</p>
             </div>
             <div class="highlight-card">
-                <img src="./assests/images/nyc_whitney.jpg" alt="Whitney Museum">
+                <img src="./assets/images/nyc_whitney.jpg" alt="Whitney Museum">
                 <h3>🖌️ The Whitney Museum of American Art</h3>
                 <p>Dedicated to 20th- and 21st-century American art, the Whitney showcases works by artists like Edward Hopper, Georgia O'Keeffe, and Jean-Michel Basquiat.</p>
             </div>
@@ -151,28 +69,20 @@
                  
                  <p>Outdoor events like the Washington Square Outdoor Art Exhibit and the Atlantic Antic street fair showcase local artists and craftspeople. The NYCxDESIGN festival celebrates the city's design community, featuring exhibitions, workshops, and installations across the five boroughs.</p>  
             </div>
-            <img src="./assests/images/nyc_art_festival.jpeg" alt="NYC Art Festival">
+            <img src="./assets/images/nyc_art_festival.jpeg" alt="NYC Art Festival">
         </div>
       </section>
   
       <section class="gallery">
         <h2>📸 NYC Art & Museum Gallery</h2>
         <div class="gallery-grid">
-            <img src="./assests/images/art_gallery_1.jpg" alt="Street Art">
-            <img src="./assests/images/art_gallery_2.jpg" alt="Museum Exhibit">
-            <img src="./assests/images/art_gallery_3.jpg" alt="Public Art">
-            <img src="./assests/images/art_gallery_4.jpg" alt="Art Installation">
+            <img src="./assets/images/art_gallery_1.jpg" alt="Street Art">
+            <img src="./assets/images/art_gallery_2.jpg" alt="Museum Exhibit">
+            <img src="./assets/images/art_gallery_3.jpg" alt="Public Art">
+            <img src="./assets/images/art_gallery_4.jpg" alt="Art Installation">
         </div>
       </section>
 
 
 
-
-
-    <footer>
-        <p>&copy; 2025 Soudagar Londhe @RIT. All rights reserved.</p>
-    </footer>
-
-
-</body>
-</html>
+<?php require_once('assets/inc/footer.inc.php'); ?>

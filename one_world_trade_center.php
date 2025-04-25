@@ -1,90 +1,9 @@
-<!-- One WTC HTML page -->
+<?php
+$pageTitle = 'One WTC';
+$pageCSS = "./assets/css/one_world_trade_center.css";
+require_once('assets/inc/header.inc.php');
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assests/css/navbar.css" />
-    <link rel="stylesheet" href="./assests/css/one_world_trade_center.css" />  
-    <script src="./assests/js/script.js" defer></script>
-    <title>One World Trade Center of NYC</title>
-</head>
-<body>
-
-    <div id="navbar-container">
-        <nav>
-            <div class="nav__logo">
-              <a href="./index.html">
-                <img src="./assests/images/logo2.png"  alt="Logo" />
-                <h3>Wander NYC</h3>
-              </a>
-            </div>
-          
-            <div class="menu-toggle" id="menu-toggle">
-              <i class="ri-menu-line" id="menu-icon"></i> 
-            </div>
-          
-            <ul class="nav__links nav-menu" id="nav-menu">
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Attractions</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./empireStateBuilding.html">Empire State Building</a></li>
-                  <li><a href="./central_park.html">Central Park</a></li>
-                  <li><a href="./times_square.html">Times Square</a></li>
-                  <li><a href="./statue_of_liberty.html">Statue of Liberty</a></li>
-                  <li><a href="./one_world_trade_center.html">One World Trade Center(WTC)</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Food and Dining</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./restaurants.html">Restaurants</a></li>
-                  <li><a href="./pizza.html">Pizza</a></li>
-                  <li><a href="./clubs.html">Clubs and Bars</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">About NYC</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./history.html">History and Culture</a></li>
-                  <li><a href="./arts_museum.html">Arts and Museum</a></li>
-                  <li><a href="./facts.html">Immigration and Facts</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Transportation Guide</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./bus_taxis.html">Bus Taxi/Uber</a></li>
-                  <li><a href="./subways.html">Subways</a></li>
-                </ul>
-              </li>
-          
-              <li class="link dropdown">
-                <a href="#" class="main_nav">Blogs</a>
-                <ul class="dropdown-menu">
-                  <li><a href="./blog.html">Travel Experience</a></li>
-                  <li><a href="./travel_tips.html">Travel Tips</a></li>
-                </ul>
-              </li>
-          
-              <li class="link" ><a href="./references.html" class="main_nav">References</a></li>
-              <li class="link" ><a href="./documentation.html" class="main_nav">Documentation</a></li>
-          
-          
-          
-            </ul>
-          </nav>
-    </div>
-
-    <button id="scrollToTop" title="Go to top">
-        <i class="ri-arrow-up-line"></i>
-    </button>
+?>
 
     <header class="hero">
         <div class="hero-content">
@@ -104,19 +23,19 @@
                 <p>
                     The planning for the new World Trade Center began shortly after the attacks, with a design competition launched in 2002. The winning design, created by architect David Childs, was chosen for its symbolic height of 1,776 feet, reflecting the year of American independence. The building's construction began in 2006, and it was completed in 2013. During its construction, the Freedom Tower faced many challenges, including the need for advanced safety features to prevent future attacks and the integration of memorials to honor the victims.
                 </p>
-                <p>                    The dedication of One World Trade Center was not just the completion of a building, but a symbol of the resilience of New York City and the entire nation. It stands as a tribute to those lost and a beacon of hope for the future, showing that even in the face of tragedy, life moves forward. The building's design incorporates elements that pay homage to the past, such as the memorial at its base, while representing a new era of safety, strength, and freedom for America.                <br>
+                <p> The dedication of One World Trade Center was not just the completion of a building, but a symbol of the resilience of New York City and the entire nation. It stands as a tribute to those lost and a beacon of hope for the future, showing that even in the face of tragedy, life moves forward. The building's design incorporates elements that pay homage to the past, such as the memorial at its base, while representing a new era of safety, strength, and freedom for America.                <br>
                 </p>
              </div>
             <div class="about-image">
-                <img src="./assests/images/wtc4.webp" alt="One World Trade Center">
+                <img src="./assets/images/wtc4.webp" alt="One World Trade Center">
             </div>
         </div>
 
         <div class="about-container">
 
             <div class="about-image">
-                <img src="./assests/images/wtc.jpg" alt="One World Trade Center View">
-                <img src="./assests/images/wtc1.jpg" alt="One World Trade Center Close-up">
+                <img src="./assets/images/wtc.jpg" alt="One World Trade Center View">
+                <img src="./assets/images/wtc1.jpg" alt="One World Trade Center Close-up">
             </div>
             <div class="about-content">
                 <h2>Notable Features</h2>
@@ -139,7 +58,7 @@
         <div class="about-container">
             <div class="map_details">
                 <p>One World Trade Center on map</p>
-                <img src="./assests/images/one_wtc_on_map.png" alt="View from the Top">
+                <img src="./assets/images/one_wtc_on_map.png" alt="View from the Top">
             </div>
         </div>
     </section>
@@ -176,48 +95,48 @@
   
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc3.avif" alt="One WTC" />
+              <img src="./assets/images/wtc3.avif" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc8.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc8.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_21.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_21.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_22.webp" alt="One WTC" />
+              <img src="./assets/images/wtc_22.webp" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_23.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_23.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_24.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_24.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_25.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_25.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_26.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_26.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_27.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_27.jpg" alt="One WTC" />
             </div>
             
           
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_28.jpg" alt="One WTC" />
+              <img src="./assets/images/wtc_28.jpg" alt="One WTC" />
             </div>
             
             <div class="gallery-image-wrapper">
-              <img src="./assests/images/wtc_29.avif" alt="One WTC" />
+              <img src="./assets/images/wtc_29.avif" alt="One WTC" />
             </div>
   
             
@@ -252,9 +171,4 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Soudagar Londhe @RIT. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<?php require_once('assets/inc/footer.inc.php'); ?>
