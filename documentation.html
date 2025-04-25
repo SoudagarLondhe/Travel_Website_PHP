@@ -88,6 +88,42 @@
     
     <section class="grading-container">
         
+      <div class="grading-item">
+        <h2>1. Improved Hover Effect (Improvement from Individual Part 1 feedback)</h2>
+        <p>
+          Based on the previous feedback regarding distracting size changes during hover interactions,
+          I updated the hover effect for all Attractions pages (Empire State Building, Central Park, 
+          Times Square, Statue of Liberty, and One World Trade Center). Instead of scaling the entire 
+          content or button area, I limited the hover effect to only scale the image inside each 
+          gallery item. This was achieved by applying a CSS transform: scale(1.1) on the .gallery-image-wrapper:hover img selector. 
+          This ensures that only the image subtly zooms on hover, providing a more focused and smoother user experience without shifting 
+          surrounding content.
+
+        </p>
+      </div>
+
+      <div class="grading-item">
+        <h2>2. Original JavaScript Component</h2>
+        <p>
+          I implemented a typewriter animation using vanilla JavaScript that displays contextual welcome text on pages like index.html, history.html, arts_museum.html, and facts.html.
+      Each page uses a data-message attribute to dynamically control the message without duplicating JavaScript code.
+      The text appears character-by-character using setTimeout(), creating a clean typing effect that enhances user engagement.
+      No external libraries were used — the feature is fully custom, lightweight, and reusable across multiple pages.
+        </p>
+        </div>
+
+        <div class="grading-item">
+          <h2>3.DHTML Component</h2>
+          <p>
+            For all pages under the Attractions section (Empire State Building, Central Park, Times Square, Statue of Liberty, and One World Trade Center), I implemented a responsive image carousel using custom JavaScript and DHTML.
+          The carousel supports both desktop navigation via left/right buttons and mobile swipe gestures built with touchstart and touchmove events.
+          Unlike fixed-step scrolling, the mobile swipe scrolls based on the actual gesture distance, creating a natural, app-like interaction.
+          
+          Additionally, a fade-in animation is applied to gallery images on scroll using DHTML techniques, improving visual flow and user experience.
+          </p>
+            
+        </div>
+
         <div class="grading-item">
             <h2>1. Good Design Techniques - CRAP</h2>
             <p>The website follows CRAP principles (Contrast, Repetition, Alignment, and Proximity) to ensure a visually appealing and user-friendly design. Colors and typography were chosen for readability, and spacing is well-balanced for ease of navigation.</p>
