@@ -1,3 +1,5 @@
+<!-- Statue of Liberty PHP file -->
+
 <?php
 $pageTitle = 'Statue of Liberty';
 $pageCSS = "assets/css/statue_of_liberty.css";

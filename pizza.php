@@ -1,3 +1,5 @@
+<!-- Pizza PHP file -->
+
 <?php
 $pageTitle = 'Pizza';
 $pageCSS = "assets/css/pizza.css";

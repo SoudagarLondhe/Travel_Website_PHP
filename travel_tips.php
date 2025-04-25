@@ -1,3 +1,5 @@
+<!-- Travel and Tips PHP file -->
+
 <?php
 $pageTitle = 'Travel Tips';
 $pageCSS = "./assets/css/travel_tips.css";

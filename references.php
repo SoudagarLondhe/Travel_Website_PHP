@@ -1,3 +1,5 @@
+<!-- References PHP file -->
+
 <?php
 $pageTitle = 'References';
 $pageCSS = "assets/css/references.css";

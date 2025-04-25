@@ -1,3 +1,5 @@
+<!-- Empire State Building PHP file -->
+
 <?php
 $pageTitle = 'Empire State Building';
 $pageCSS = "assets/css/empireStateBuilding.css";

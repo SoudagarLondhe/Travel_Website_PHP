@@ -1,3 +1,5 @@
+<!-- Clubs PHP file -->
+
 <?php
 $pageTitle = 'Clubs';
 $pageCSS = "assets/css/clubs.css";

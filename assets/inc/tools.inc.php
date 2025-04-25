@@ -1,3 +1,4 @@
+<!-- Tools PHP file (used for sanitize user's input) -->
 <?php
     function sanitize($str, $length=50) {
         $str = trim($str);

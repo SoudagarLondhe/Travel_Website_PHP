@@ -1,3 +1,5 @@
+<!-- Central Park PHP file -->
+
 <?php
 $pageTitle = 'Central Park';
 $pageCSS = "assets/css/central_park.css";

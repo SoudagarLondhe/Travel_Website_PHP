@@ -1,3 +1,5 @@
+<!-- Arts and Museum PHP file -->
+
 <?php
 $pageTitle = 'Arts & Museum';
 $pageCSS = "assets/css/arts_museum.css";

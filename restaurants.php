@@ -1,3 +1,5 @@
+<!-- Restaurants PHP file -->
+
 <?php
 $pageTitle = 'Restaurants';
 $pageCSS = "assets/css/restaurants.css";

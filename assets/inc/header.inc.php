@@ -1,3 +1,5 @@
+<!-- Header PHP file -->
+
 <?php
     require_once('/home/MAIN/srl1622/connection.db.php');
 ?>

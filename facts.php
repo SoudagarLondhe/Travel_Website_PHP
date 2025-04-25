@@ -1,3 +1,5 @@
+<!-- Facts PHP file -->
+
 <?php
 $pageTitle = 'Facts';
 $pageCSS = "assets/css/facts.css";
@@ -8,7 +10,6 @@ require_once('assets/inc/header.inc.php');
     <header class="hero">
         <div class="hero-content">
             <h1>Immigration & Facts</h1>
-            <!-- <p>Dive into the tales of those who built NYC and explore the city's most intriguing facts and achievements.</p> -->
             <p id="typewriter-text" class="typewriter-text" data-message="Dive into tales of those who built NYC and explore the city's most intriguing facts."></p>
           </div>
     </header>

@@ -1,3 +1,4 @@
+<!-- Homepage PHP file -->
 <?php
 $pageTitle = 'Home';
 $pageCSS = "./assets/css/style.css";

@@ -1,3 +1,5 @@
+<!-- History and culture PHP file -->
+
 <?php
 $pageTitle = 'History';
 $pageCSS = "assets/css/history.css";

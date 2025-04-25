@@ -1,3 +1,5 @@
+<!-- Times square PHP file -->
+
 <?php
 $pageTitle = 'Times Square';
 $pageCSS = "assets/css/times_square.css";

@@ -36,7 +36,7 @@ body {
 
 
 .blogs {
-  padding: 50px 10%;
+  padding: 50px 5%;
 }
 
 .blog-container {
@@ -203,6 +203,7 @@ footer {
   background: #014085;
 }
 
+
 @media (max-width: 768px) {
 
   .hero h1{
@@ -220,4 +221,82 @@ footer {
     font-size: 14px;
   }
 
+}
+
+
+.comment-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.comment-form input,
+.comment-form select,
+.comment-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.comment-form input:focus,
+.comment-form select:focus,
+.comment-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.comment-form .post-comment {
+  padding: 12px;
+  background-color: #036ad7;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.comment-form .post-comment:hover {
+  background-color: #0056b3;
+}
+
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 12px; 
+  color: #333; 
+  font-weight: bold; 
+}
+
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: green;
+  padding: 10px;
+  margin: 10px 0;
+  background: #e6ffe6;
+  border: 1px solid #a3e8a3;
+  border-radius: 4px;
+}
+
+input.error, select.error, textarea.error {
+  border-color: red !important;
 }
